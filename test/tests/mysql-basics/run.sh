@@ -1,5 +1,7 @@
 #!/bin/bash
-set -e
+set -eo pipefail
+
+dir="$(dirname "$(readlink -f "$BASH_SOURCE")")"
 
 image="$1"
 
@@ -9,23 +11,31 @@ export MYSQL_PASSWORD='my cool mysql password'
 export MYSQL_DATABASE='my cool mysql database'
 
 cname="mysql-container-$RANDOM-$RANDOM"
-cid="$(docker run -d -e MYSQL_ROOT_PASSWORD -e MYSQL_USER -e MYSQL_PASSWORD -e MYSQL_DATABASE --name "$cname" "$image")"
-trap "docker rm -f $cid > /dev/null" EXIT
+cid="$(
+	docker run -d \
+		-e MYSQL_ROOT_PASSWORD \
+		-e MYSQL_USER \
+		-e MYSQL_PASSWORD \
+		-e MYSQL_DATABASE \
+		--name "$cname" \
+		"$image"
+)"
+trap "docker rm -vf $cid > /dev/null" EXIT
 
 mysql() {
-	docker run --rm -i --link "$cname":mysql --entrypoint mysql -e MYSQL_PWD="$MYSQL_PASSWORD" "$image" -hmysql -u"$MYSQL_USER" --silent "$@" "$MYSQL_DATABASE"
+	docker run --rm -i \
+		--link "$cname":mysql \
+		--entrypoint mysql \
+		-e MYSQL_PWD="$MYSQL_PASSWORD" \
+		"$image" \
+		-hmysql \
+		-u"$MYSQL_USER" \
+		--silent \
+		"$@" \
+		"$MYSQL_DATABASE"
 }
 
-tries=10
-while ! echo 'SELECT 1' | mysql &> /dev/null; do
-	(( tries-- ))
-	if [ $tries -le 0 ]; then
-		echo >&2 'mysqld failed to accept connetions in a reasonable amount of time!'
-		echo 'SELECT 1' | mysql # to hopefully get a useful error message
-		false
-	fi
-	sleep 2
-done
+. "$dir/../../retry.sh" --tries 20 "echo 'SELECT 1' | mysql"
 
 echo 'CREATE TABLE test (a INT, b INT, c VARCHAR(255))' | mysql
 [ "$(echo 'SELECT COUNT(*) FROM test' | mysql)" = 0 ]
@@ -35,5 +45,5 @@ echo 'INSERT INTO test VALUES (2, 3, "goodbye!")' | mysql
 [ "$(echo 'SELECT COUNT(*) FROM test' | mysql)" = 2 ]
 echo 'DELETE FROM test WHERE a = 1' | mysql
 [ "$(echo 'SELECT COUNT(*) FROM test' | mysql)" = 1 ]
-[ "$(echo 'SELECT c FROM test' | mysql)" = "goodbye!" ]
+[ "$(echo 'SELECT c FROM test' | mysql)" = 'goodbye!' ]
 echo 'DROP TABLE test' | mysql

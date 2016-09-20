@@ -1,15 +1,13 @@
-# maintainer: InfoSiftr <github@infosiftr.com> (@infosiftr)
+# this file is generated via https://github.com/docker-library/wordpress/blob/60e216811a18dcff77c78ad45cc55a21ac7b0b46/generate-stackbrew-library.sh
 
-4.2.2-apache: git://github.com/docker-library/wordpress@1420b4c44ba0cf13d2d1d1e41bbc3bc74e83ce9f apache
-4.2.2: git://github.com/docker-library/wordpress@1420b4c44ba0cf13d2d1d1e41bbc3bc74e83ce9f apache
-4.2-apache: git://github.com/docker-library/wordpress@1420b4c44ba0cf13d2d1d1e41bbc3bc74e83ce9f apache
-4.2: git://github.com/docker-library/wordpress@1420b4c44ba0cf13d2d1d1e41bbc3bc74e83ce9f apache
-4-apache: git://github.com/docker-library/wordpress@1420b4c44ba0cf13d2d1d1e41bbc3bc74e83ce9f apache
-apache: git://github.com/docker-library/wordpress@1420b4c44ba0cf13d2d1d1e41bbc3bc74e83ce9f apache
-4: git://github.com/docker-library/wordpress@1420b4c44ba0cf13d2d1d1e41bbc3bc74e83ce9f apache
-latest: git://github.com/docker-library/wordpress@1420b4c44ba0cf13d2d1d1e41bbc3bc74e83ce9f apache
+Maintainers: Tianon Gravi <admwiggin@gmail.com> (@tianon),
+             Joseph Ferguson <yosifkit@gmail.com> (@yosifkit)
+GitRepo: https://github.com/docker-library/wordpress.git
 
-4.2.2-fpm: git://github.com/docker-library/wordpress@1420b4c44ba0cf13d2d1d1e41bbc3bc74e83ce9f fpm
-4.2-fpm: git://github.com/docker-library/wordpress@1420b4c44ba0cf13d2d1d1e41bbc3bc74e83ce9f fpm
-4-fpm: git://github.com/docker-library/wordpress@1420b4c44ba0cf13d2d1d1e41bbc3bc74e83ce9f fpm
-fpm: git://github.com/docker-library/wordpress@1420b4c44ba0cf13d2d1d1e41bbc3bc74e83ce9f fpm
+Tags: 4.6.1-apache, 4.6-apache, 4-apache, apache, 4.6.1, 4.6, 4, latest
+GitCommit: d6294d103d2eb8d618dd09e28240ea2de2577c25
+Directory: apache
+
+Tags: 4.6.1-fpm, 4.6-fpm, 4-fpm, fpm
+GitCommit: d6294d103d2eb8d618dd09e28240ea2de2577c25
+Directory: fpm

@@ -1,8 +1,11 @@
 # maintainer: David Gageot <david.gageot@sonarsource.com> (@dgageot)
 
 
-latest: git://github.com/SonarSource/docker-sonarqube@e7ac925f3ae123fa01daa30c5c79da66ed41983f 5.1.1
-5.1.1: git://github.com/SonarSource/docker-sonarqube@e7ac925f3ae123fa01daa30c5c79da66ed41983f 5.1.1
-
-lts: git://github.com/SonarSource/docker-sonarqube@83e2cbed37a8a6947b130958d0cb2ee7acd42d3a 4.5.4
-4.5.4: git://github.com/SonarSource/docker-sonarqube@83e2cbed37a8a6947b130958d0cb2ee7acd42d3a 4.5.4
+latest: git://github.com/SonarSource/docker-sonarqube@73534fd899d29eb1373ea073edbfe7a4074ede6e 6.0
+6.0: git://github.com/SonarSource/docker-sonarqube@73534fd899d29eb1373ea073edbfe7a4074ede6e 6.0
+lts: git://github.com/SonarSource/docker-sonarqube@73534fd899d29eb1373ea073edbfe7a4074ede6e 5.6.1
+5.6.1: git://github.com/SonarSource/docker-sonarqube@73534fd899d29eb1373ea073edbfe7a4074ede6e 5.6.1
+alpine: git://github.com/SonarSource/docker-sonarqube@73534fd899d29eb1373ea073edbfe7a4074ede6e 6.0-alpine
+6.0-alpine: git://github.com/SonarSource/docker-sonarqube@73534fd899d29eb1373ea073edbfe7a4074ede6e 6.0-alpine
+lts-alpine: git://github.com/SonarSource/docker-sonarqube@73534fd899d29eb1373ea073edbfe7a4074ede6e 5.6.1-alpine
+5.6.1-alpine: git://github.com/SonarSource/docker-sonarqube@73534fd899d29eb1373ea073edbfe7a4074ede6e 5.6.1-alpine

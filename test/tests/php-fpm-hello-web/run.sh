@@ -1,5 +1,4 @@
 #!/bin/bash
-
 set -eo pipefail
 
 dir="$(dirname "$(readlink -f "$BASH_SOURCE")")"
@@ -7,7 +6,7 @@ dir="$(dirname "$(readlink -f "$BASH_SOURCE")")"
 image="$1"
 
 # Build a client image with cgi-fcgi for testing
-clientImage='librarytest/php-fpm-hello-web:fcgi'
+clientImage='librarytest/php-fpm-hello-web:fcgi-client'
 docker build -t "$clientImage" - > /dev/null <<'EOF'
 FROM debian:jessie
 
@@ -16,9 +15,15 @@ RUN set -x && apt-get update && apt-get install -y libfcgi0ldbl && rm -rf /var/l
 ENTRYPOINT ["cgi-fcgi"]
 EOF
 
+serverImage="$("$dir/../image-name.sh" librarytest/php-fpm-hello-web "$image")"
+"$dir/../docker-build.sh" "$dir" "$serverImage" <<EOD
+FROM $image
+COPY dir/index.php /var/www/html/
+EOD
+
 # Create an instance of the container-under-test
-cid="$(docker run -d -v "$dir/index.php":/var/www/html/index.php:ro "$image")"
-trap "docker rm -f $cid > /dev/null" EXIT
+cid="$(docker run -d "$serverImage")"
+trap "docker rm -vf $cid > /dev/null" EXIT
 
 # RACY TESTS ARE RACY
 sleep 1

@@ -1,0 +1,22 @@
+Maintainers: Damien Metzler <dmetzler@nuxeo.com> (@dmetzler),
+            Arnaud Kervern <akervern@nuxeo.com> (@arnaudke)
+
+Tags: latest, FT, 8, 8.3
+GitRepo: https://github.com/nuxeo/docker-nuxeo.git
+GitCommit: 8535464e476b39e10001242ad7c885519fadc2a6
+Directory: 8.3
+
+Tags: 8.2
+GitRepo: https://github.com/nuxeo/docker-nuxeo.git
+GitCommit: 8535464e476b39e10001242ad7c885519fadc2a6
+Directory: 8.2
+
+Tags: LTS-2015, LTS, 7, 7.10
+GitRepo: https://github.com/nuxeo/docker-nuxeo.git
+GitCommit: 8535464e476b39e10001242ad7c885519fadc2a6
+Directory: 7.10
+
+Tags: LTS-2014, 6, 6.0
+GitRepo: https://github.com/nuxeo/docker-nuxeo.git
+GitCommit: 8535464e476b39e10001242ad7c885519fadc2a6
+Directory: 6.0

@@ -1,64 +1,89 @@
-# maintainer: InfoSiftr <github@infosiftr.com> (@infosiftr)
+# this file is generated via https://github.com/docker-library/buildpack-deps/blob/974c358f7d1b545fbfe388dec9d149aea1b8116f/generate-stackbrew-library.sh
 
-jessie-curl: git://github.com/docker-library/buildpack-deps@a0a59c61102e8b079d568db69368fb89421f75f2 jessie/curl
-curl: git://github.com/docker-library/buildpack-deps@a0a59c61102e8b079d568db69368fb89421f75f2 jessie/curl
+Maintainers: Tianon Gravi <admwiggin@gmail.com> (@tianon),
+             Joseph Ferguson <yosifkit@gmail.com> (@yosifkit)
+GitRepo: https://github.com/docker-library/buildpack-deps.git
 
-jessie-scm: git://github.com/docker-library/buildpack-deps@a0a59c61102e8b079d568db69368fb89421f75f2 jessie/scm
-scm: git://github.com/docker-library/buildpack-deps@a0a59c61102e8b079d568db69368fb89421f75f2 jessie/scm
+Tags: jessie-curl, curl
+GitCommit: a0a59c61102e8b079d568db69368fb89421f75f2
+Directory: jessie/curl
 
-jessie: git://github.com/docker-library/buildpack-deps@6da64bd1dca4bae0a817b3e1886300c526fe67da jessie
-latest: git://github.com/docker-library/buildpack-deps@6da64bd1dca4bae0a817b3e1886300c526fe67da jessie
+Tags: jessie-scm, scm
+GitCommit: 1845b3f918f69b4c97912b0d4d68a5658458e84f
+Directory: jessie/scm
 
-precise-curl: git://github.com/docker-library/buildpack-deps@4cd7279c3bbe2359e5e3798a267760a886422d6d precise/curl
+Tags: jessie, latest
+GitCommit: f1d33d5c92e1bd2aee9f2333ceb316251e6388d4
+Directory: jessie
 
-precise-scm: git://github.com/docker-library/buildpack-deps@4cd7279c3bbe2359e5e3798a267760a886422d6d precise/scm
+Tags: precise-curl
+GitCommit: af914a5bde2a749884177393c8140384048dc5f9
+Directory: precise/curl
 
-precise: git://github.com/docker-library/buildpack-deps@6da64bd1dca4bae0a817b3e1886300c526fe67da precise
+Tags: precise-scm
+GitCommit: 1845b3f918f69b4c97912b0d4d68a5658458e84f
+Directory: precise/scm
 
-sid-curl: git://github.com/docker-library/buildpack-deps@a0a59c61102e8b079d568db69368fb89421f75f2 sid/curl
+Tags: precise
+GitCommit: f1d33d5c92e1bd2aee9f2333ceb316251e6388d4
+Directory: precise
 
-sid-scm: git://github.com/docker-library/buildpack-deps@a0a59c61102e8b079d568db69368fb89421f75f2 sid/scm
+Tags: sid-curl
+GitCommit: a0a59c61102e8b079d568db69368fb89421f75f2
+Directory: sid/curl
 
-sid: git://github.com/docker-library/buildpack-deps@6da64bd1dca4bae0a817b3e1886300c526fe67da sid
+Tags: sid-scm
+GitCommit: 1845b3f918f69b4c97912b0d4d68a5658458e84f
+Directory: sid/scm
 
-squeeze-curl: git://github.com/docker-library/buildpack-deps@f086230fb870874c39bd85f3ee65f86fd4ca8c97 squeeze/curl
+Tags: sid
+GitCommit: f1d33d5c92e1bd2aee9f2333ceb316251e6388d4
+Directory: sid
 
-squeeze-scm: git://github.com/docker-library/buildpack-deps@f086230fb870874c39bd85f3ee65f86fd4ca8c97 squeeze/scm
+Tags: stretch-curl
+GitCommit: c7478e564dd5dc063cdb0231764379a6916fe525
+Directory: stretch/curl
 
-squeeze: git://github.com/docker-library/buildpack-deps@6da64bd1dca4bae0a817b3e1886300c526fe67da squeeze
+Tags: stretch-scm
+GitCommit: 1845b3f918f69b4c97912b0d4d68a5658458e84f
+Directory: stretch/scm
 
-stretch-curl: git://github.com/docker-library/buildpack-deps@c7478e564dd5dc063cdb0231764379a6916fe525 stretch/curl
+Tags: stretch
+GitCommit: f1d33d5c92e1bd2aee9f2333ceb316251e6388d4
+Directory: stretch
 
-stretch-scm: git://github.com/docker-library/buildpack-deps@c7478e564dd5dc063cdb0231764379a6916fe525 stretch/scm
+Tags: trusty-curl
+GitCommit: af914a5bde2a749884177393c8140384048dc5f9
+Directory: trusty/curl
 
-stretch: git://github.com/docker-library/buildpack-deps@6da64bd1dca4bae0a817b3e1886300c526fe67da stretch
+Tags: trusty-scm
+GitCommit: 1845b3f918f69b4c97912b0d4d68a5658458e84f
+Directory: trusty/scm
 
-trusty-curl: git://github.com/docker-library/buildpack-deps@21f2d32bcf321ff095a23c0edc1d8be2b7989962 trusty/curl
+Tags: trusty
+GitCommit: f1d33d5c92e1bd2aee9f2333ceb316251e6388d4
+Directory: trusty
 
-trusty-scm: git://github.com/docker-library/buildpack-deps@bb6691a2782687748549baac903340fc21a5533c trusty/scm
+Tags: wheezy-curl
+GitCommit: a0a59c61102e8b079d568db69368fb89421f75f2
+Directory: wheezy/curl
 
-trusty: git://github.com/docker-library/buildpack-deps@6da64bd1dca4bae0a817b3e1886300c526fe67da trusty
+Tags: wheezy-scm
+GitCommit: 1845b3f918f69b4c97912b0d4d68a5658458e84f
+Directory: wheezy/scm
 
-utopic-curl: git://github.com/docker-library/buildpack-deps@4cd7279c3bbe2359e5e3798a267760a886422d6d utopic/curl
+Tags: wheezy
+GitCommit: f1d33d5c92e1bd2aee9f2333ceb316251e6388d4
+Directory: wheezy
 
-utopic-scm: git://github.com/docker-library/buildpack-deps@4cd7279c3bbe2359e5e3798a267760a886422d6d utopic/scm
+Tags: xenial-curl
+GitCommit: 2da658b9a1b91fa61d63ffad2ea52685cac6c702
+Directory: xenial/curl
 
-utopic: git://github.com/docker-library/buildpack-deps@6da64bd1dca4bae0a817b3e1886300c526fe67da utopic
+Tags: xenial-scm
+GitCommit: 2da658b9a1b91fa61d63ffad2ea52685cac6c702
+Directory: xenial/scm
 
-vivid-curl: git://github.com/docker-library/buildpack-deps@4cd7279c3bbe2359e5e3798a267760a886422d6d vivid/curl
-
-vivid-scm: git://github.com/docker-library/buildpack-deps@4cd7279c3bbe2359e5e3798a267760a886422d6d vivid/scm
-
-vivid: git://github.com/docker-library/buildpack-deps@6da64bd1dca4bae0a817b3e1886300c526fe67da vivid
-
-wheezy-curl: git://github.com/docker-library/buildpack-deps@a0a59c61102e8b079d568db69368fb89421f75f2 wheezy/curl
-
-wheezy-scm: git://github.com/docker-library/buildpack-deps@a0a59c61102e8b079d568db69368fb89421f75f2 wheezy/scm
-
-wheezy: git://github.com/docker-library/buildpack-deps@6da64bd1dca4bae0a817b3e1886300c526fe67da wheezy
-
-wily-curl: git://github.com/docker-library/buildpack-deps@4cd7279c3bbe2359e5e3798a267760a886422d6d wily/curl
-
-wily-scm: git://github.com/docker-library/buildpack-deps@4cd7279c3bbe2359e5e3798a267760a886422d6d wily/scm
-
-wily: git://github.com/docker-library/buildpack-deps@6da64bd1dca4bae0a817b3e1886300c526fe67da wily
+Tags: xenial
+GitCommit: f1d33d5c92e1bd2aee9f2333ceb316251e6388d4
+Directory: xenial

@@ -1,0 +1,29 @@
+# this file is generated via https://github.com/docker-library/redmine/blob/c070428e8c4c43b2d0608a1e77ae44f78220967e/generate-stackbrew-library.sh
+
+Maintainers: Tianon Gravi <admwiggin@gmail.com> (@tianon),
+             Joseph Ferguson <yosifkit@gmail.com> (@yosifkit)
+GitRepo: https://github.com/docker-library/redmine.git
+
+Tags: 3.1.6, 3.1
+GitCommit: c7fbe17fb7c3f1b33cb2d6fbdeaf1ee42ac9cbb9
+Directory: 3.1
+
+Tags: 3.1.6-passenger, 3.1-passenger
+GitCommit: 31ec3c8963424bbc1730806a65d9914c84df17de
+Directory: 3.1/passenger
+
+Tags: 3.2.3, 3.2
+GitCommit: c7fbe17fb7c3f1b33cb2d6fbdeaf1ee42ac9cbb9
+Directory: 3.2
+
+Tags: 3.2.3-passenger, 3.2-passenger
+GitCommit: 31ec3c8963424bbc1730806a65d9914c84df17de
+Directory: 3.2/passenger
+
+Tags: 3.3.0, 3.3, 3, latest
+GitCommit: c7fbe17fb7c3f1b33cb2d6fbdeaf1ee42ac9cbb9
+Directory: 3.3
+
+Tags: 3.3.0-passenger, 3.3-passenger, 3-passenger, passenger
+GitCommit: 31ec3c8963424bbc1730806a65d9914c84df17de
+Directory: 3.3/passenger

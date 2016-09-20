@@ -1,6 +1,5 @@
 # maintainer: "Carl Boettiger" <rocker-maintainers@eddelbuettel.com> (@cboettig)
 # maintainer: "Dirk Eddelbuettel" <rocker-maintainers@eddelbuettel.com> (@eddelbuettel)
 
-latest: git://github.com/rocker-org/rocker@849e42992a3ce5bf6f004bcbfc76605aff3f3c08 r-base
-3.2.0: git://github.com/rocker-org/rocker@849e42992a3ce5bf6f004bcbfc76605aff3f3c08 r-base
-
+3.3.1: git://github.com/rocker-org/rocker@118be9ab285173237441836d84bab714c0920cca r-base
+latest: git://github.com/rocker-org/rocker@118be9ab285173237441836d84bab714c0920cca r-base

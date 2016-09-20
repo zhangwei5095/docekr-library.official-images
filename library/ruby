@@ -1,49 +1,53 @@
-# maintainer: InfoSiftr <github@infosiftr.com> (@infosiftr)
+# this file is generated via https://github.com/docker-library/ruby/blob/2dabbe3334950b9df116a7816aca915d606a45cd/generate-stackbrew-library.sh
 
-2.0.0-p645: git://github.com/docker-library/ruby@5b80d07084f0fb590126cdea49e6b0036f44cd9a 2.0
-2.0.0: git://github.com/docker-library/ruby@5b80d07084f0fb590126cdea49e6b0036f44cd9a 2.0
-2.0: git://github.com/docker-library/ruby@5b80d07084f0fb590126cdea49e6b0036f44cd9a 2.0
+Maintainers: Tianon Gravi <admwiggin@gmail.com> (@tianon),
+             Joseph Ferguson <yosifkit@gmail.com> (@yosifkit)
+GitRepo: https://github.com/docker-library/ruby.git
 
-2.0.0-p645-onbuild: git://github.com/docker-library/ruby@4ccabb5557ce2001aa1ae2a5f719340eb33c0383 2.0/onbuild
-2.0.0-onbuild: git://github.com/docker-library/ruby@4ccabb5557ce2001aa1ae2a5f719340eb33c0383 2.0/onbuild
-2.0-onbuild: git://github.com/docker-library/ruby@4ccabb5557ce2001aa1ae2a5f719340eb33c0383 2.0/onbuild
+Tags: 2.1.10, 2.1
+GitCommit: 82016a6f0a94260e3771835455f577d1117da527
+Directory: 2.1
 
-2.0.0-p645-slim: git://github.com/docker-library/ruby@5b80d07084f0fb590126cdea49e6b0036f44cd9a 2.0/slim
-2.0.0-slim: git://github.com/docker-library/ruby@5b80d07084f0fb590126cdea49e6b0036f44cd9a 2.0/slim
-2.0-slim: git://github.com/docker-library/ruby@5b80d07084f0fb590126cdea49e6b0036f44cd9a 2.0/slim
+Tags: 2.1.10-slim, 2.1-slim
+GitCommit: 82016a6f0a94260e3771835455f577d1117da527
+Directory: 2.1/slim
 
-2.0.0-p645-wheezy: git://github.com/docker-library/ruby@5b80d07084f0fb590126cdea49e6b0036f44cd9a 2.0/wheezy
-2.0.0-wheezy: git://github.com/docker-library/ruby@5b80d07084f0fb590126cdea49e6b0036f44cd9a 2.0/wheezy
-2.0-wheezy: git://github.com/docker-library/ruby@5b80d07084f0fb590126cdea49e6b0036f44cd9a 2.0/wheezy
+Tags: 2.1.10-alpine, 2.1-alpine
+GitCommit: 82016a6f0a94260e3771835455f577d1117da527
+Directory: 2.1/alpine
 
-2.1.6: git://github.com/docker-library/ruby@5b80d07084f0fb590126cdea49e6b0036f44cd9a 2.1
-2.1: git://github.com/docker-library/ruby@5b80d07084f0fb590126cdea49e6b0036f44cd9a 2.1
+Tags: 2.1.10-onbuild, 2.1-onbuild
+GitCommit: 5d04363db6f7ae316ef7056063f020557db828e1
+Directory: 2.1/onbuild
 
-2.1.6-onbuild: git://github.com/docker-library/ruby@4ccabb5557ce2001aa1ae2a5f719340eb33c0383 2.1/onbuild
-2.1-onbuild: git://github.com/docker-library/ruby@4ccabb5557ce2001aa1ae2a5f719340eb33c0383 2.1/onbuild
+Tags: 2.2.5, 2.2
+GitCommit: b0c1198e8917675c3d3b895967018418f77d1cdd
+Directory: 2.2
 
-2.1.6-slim: git://github.com/docker-library/ruby@5b80d07084f0fb590126cdea49e6b0036f44cd9a 2.1/slim
-2.1-slim: git://github.com/docker-library/ruby@5b80d07084f0fb590126cdea49e6b0036f44cd9a 2.1/slim
+Tags: 2.2.5-slim, 2.2-slim
+GitCommit: b0c1198e8917675c3d3b895967018418f77d1cdd
+Directory: 2.2/slim
 
-2.1.6-wheezy: git://github.com/docker-library/ruby@5b80d07084f0fb590126cdea49e6b0036f44cd9a 2.1/wheezy
-2.1-wheezy: git://github.com/docker-library/ruby@5b80d07084f0fb590126cdea49e6b0036f44cd9a 2.1/wheezy
+Tags: 2.2.5-alpine, 2.2-alpine
+GitCommit: b0c1198e8917675c3d3b895967018418f77d1cdd
+Directory: 2.2/alpine
 
-2.2.2: git://github.com/docker-library/ruby@5b80d07084f0fb590126cdea49e6b0036f44cd9a 2.2
-2.2: git://github.com/docker-library/ruby@5b80d07084f0fb590126cdea49e6b0036f44cd9a 2.2
-2: git://github.com/docker-library/ruby@5b80d07084f0fb590126cdea49e6b0036f44cd9a 2.2
-latest: git://github.com/docker-library/ruby@5b80d07084f0fb590126cdea49e6b0036f44cd9a 2.2
+Tags: 2.2.5-onbuild, 2.2-onbuild
+GitCommit: 5d04363db6f7ae316ef7056063f020557db828e1
+Directory: 2.2/onbuild
 
-2.2.2-onbuild: git://github.com/docker-library/ruby@4ccabb5557ce2001aa1ae2a5f719340eb33c0383 2.2/onbuild
-2.2-onbuild: git://github.com/docker-library/ruby@4ccabb5557ce2001aa1ae2a5f719340eb33c0383 2.2/onbuild
-2-onbuild: git://github.com/docker-library/ruby@4ccabb5557ce2001aa1ae2a5f719340eb33c0383 2.2/onbuild
-onbuild: git://github.com/docker-library/ruby@4ccabb5557ce2001aa1ae2a5f719340eb33c0383 2.2/onbuild
+Tags: 2.3.1, 2.3, 2, latest
+GitCommit: 39c4d80c42e0dffc14b2d6dce89daa28201b4d04
+Directory: 2.3
 
-2.2.2-slim: git://github.com/docker-library/ruby@5b80d07084f0fb590126cdea49e6b0036f44cd9a 2.2/slim
-2.2-slim: git://github.com/docker-library/ruby@5b80d07084f0fb590126cdea49e6b0036f44cd9a 2.2/slim
-2-slim: git://github.com/docker-library/ruby@5b80d07084f0fb590126cdea49e6b0036f44cd9a 2.2/slim
-slim: git://github.com/docker-library/ruby@5b80d07084f0fb590126cdea49e6b0036f44cd9a 2.2/slim
+Tags: 2.3.1-slim, 2.3-slim, 2-slim, slim
+GitCommit: 39c4d80c42e0dffc14b2d6dce89daa28201b4d04
+Directory: 2.3/slim
 
-2.2.2-wheezy: git://github.com/docker-library/ruby@5b80d07084f0fb590126cdea49e6b0036f44cd9a 2.2/wheezy
-2.2-wheezy: git://github.com/docker-library/ruby@5b80d07084f0fb590126cdea49e6b0036f44cd9a 2.2/wheezy
-2-wheezy: git://github.com/docker-library/ruby@5b80d07084f0fb590126cdea49e6b0036f44cd9a 2.2/wheezy
-wheezy: git://github.com/docker-library/ruby@5b80d07084f0fb590126cdea49e6b0036f44cd9a 2.2/wheezy
+Tags: 2.3.1-alpine, 2.3-alpine, 2-alpine, alpine
+GitCommit: 39c4d80c42e0dffc14b2d6dce89daa28201b4d04
+Directory: 2.3/alpine
+
+Tags: 2.3.1-onbuild, 2.3-onbuild, 2-onbuild, onbuild
+GitCommit: 1b08f346713a1293c2a9238e470e086126e2e28f
+Directory: 2.3/onbuild
